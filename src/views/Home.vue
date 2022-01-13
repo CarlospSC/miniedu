@@ -1,18 +1,24 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+Banner
+div.home
+  HomeT
+  div.container
+    img.img-fluid(alt="Home logo" src="../assets/home.png" height=535)
 </template>
 
+
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import HomeT from '../components/HomeT.vue'
+import Banner from '../components/Banner.vue'
 
 export default {
   name: 'Home',
+
   components: {
-    HelloWorld
+    HomeT,
+    Banner
   }
+  
 }
 </script>
